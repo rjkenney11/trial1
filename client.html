@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d3bce829f3.js" crossorigin="anonymous"></script>
+    <!-- <style>
+        @media only screen and (min-width: 993px) {
+            .container {
+                width: 100%;
+            }
+        }
+    </style> -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mue the Summoner</title>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="column-1"></div>
+        <div class="containerStat">
+            <div class="card" id="str">
+                <input type="text" class="white-text charinfo" id="str2" name="str2">
+                Strength <br> <label class="add"> (-1)</label>
+            </div>
+            <div class="card" id="dex">
+                <input type="text" class="white-text charinfo" id="dex2" name="dex2">
+                Dexterity <br> <label class="add">(+3)</label>
+            </div>
+            <div class="card" id="con">
+                <input type="text" class="white-text charinfo" id="con2" name="con2">
+                Constitution<br> <label class="add">(+2)</label>
+            </div>
+            <div class="card" id="intl">
+                <input type="text" class="white-text charinfo" id="intl2" name="intl2">
+                Intelligence<br> <label class="add">(-1)</label>
+            </div>
+            <div class="card" id="wis">
+                <input type="text" class="white-text charinfo" id="wis2" name="wis2">
+                Wisdom<br> <label class="add">(+2)</label>
+            </div>
+            <div class="card" id="charisma">
+                <input type="text" class="white-text charinfo" id="charisma2" name="charisma2">
+                Charisma<br> <label class="add">(+3)</label>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="column-2"></div>
+            <nav class="navbar navbar-expand-lg navbar-left">
+                <a class="navbar-brand" href="index.html">Mue <i class="fas fa-dice-d20"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-item" href="trix.html"><i class="far fa-star"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item" href="bernicio.html"><i class="fas fa-guitar"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item" href="jessica.html"><i class="fab fa-pagelines"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item" href="blaargh.html"><i class="fas fa-water"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item" href="blur.html"><i class="fas fa-running"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item" href="ben.html"><i class="fas fa-bug"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item" href="victor.html"><i class="fas fa-umbrella"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item" href="jasper.html"><i class="fas fa-paw"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item" href="sandy.html"><i class="fas fa-leaf"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item" href="toast.html"><i class="fas fa-bread-slice"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item" href="elementals.html"><i class="fas fa-fire"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item" href="miru.html"><i class="fas fa-dragon"></i></a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                    </span>
+                </div>
+            </nav>
+
+            <div class="row flex-container card-row stats">
+                <!--HIT POINTS-->
+                <div class="card level col s6 m2">
+                    <div class="card-content black-text">
+                        <h6 class="center-align">Level</h6>
+                        <input id="lev" class="black-text charinfo" style="text-align:center; font-size: 35px;">
+                    </div>
+                </div>
+                <div class="card hitpoints col s6 m2">
+                    <div class="card-content black-text">
+                        <h6 class="center-align">HP (117)</h6>
+                        <input id="hp" class="black-text charinfo" style="text-align:center; font-size: 35px;">
+                    </div>
+                </div>
+                <!--ARMOR CLASS-->
+                <div class="card armorclass col s6 m2">
+                    <div class="card-content black-text">
+                        <h6 class="center-align">A.C.</h6>
+                        <input id="ac" class="black-text charinfo" style="text-align:center; font-size: 35px;">
+                    </div>
+                </div>
+                <!--Initiative-->
+                <div class="card initiative col s6 m2">
+                    <div class="card-content black-text">
+                        <h6 class="center-align"> Initiative</h6>
+                        <input id="sp" class="black-text charinfo" style="text-align:center; font-size: 35px;">
+                    </div>
+                </div>
+                <!--PROFICIENCY BOUNUS-->
+                <div class="card profbonus col s6 m2">
+                    <div class="card-content black-text">
+                        <h6 class="bonus center-align">Prof. Bonus</h6>
+                        <input id="int" class="black-text charinfo" style="text-align:center; font-size: 35px;">
+                    </div>
+                </div>
+                <!--SPELL-->
+                <div class="card spell col s6 m2">
+                    <div class="card-content black-text">
+                        <h6 class="center-align">Spell DC</h6>
+                        <input id="pb" class="black-text charinfo" style="text-align:center; font-size: 35px;">
+                    </div>
+                </div>
+                <!--Inspiration-->
+                <div class="card spell col s6 m2">
+                    <div class="card-content black-text">
+                        <h6 class="center-align">Inspiration</h6>
+                        <input id="inspo" class="black-text charinfo" style="text-align:center; font-size: 35px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="skills-container">
+                    <form action="text">
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="acrobatics" unchecked="checked" />
+                                <span>Acrobatics</span>
+                                <input type="text" id="acrobatics2" name="acrobatics2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="animal-handling" unchecked="checked" />
+                                <span>Animal Handle</span>
+                                <input type="text" id="animal2" name="animal2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="arcana" unchecked="checked" />
+                                <span>Arcana</span>
+                                <input type="text" id="arcana2" name="arcana2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="athletics" unchecked="checked" />
+                                <span>Athletics</span>
+                                <input type="text" id="athletics2" name="athletics2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="deception" unchecked="checked" />
+                                <span>Deception</span>
+                                <input type="text" id="deception2" name="deception2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="history" unchecked="checked" />
+                                <span>History</span>
+                                <input type="text" id="history2" name="history2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="insight" unchecked="checked" />
+                                <span>Insight</span>
+                                <input type="text" id="insight2" name="insight2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="intimidation" unchecked="checked" />
+                                <span>Intimidation</span>
+                                <input type="text" id="intimidation2" name="intimidation2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="invest" unchecked="checked" />
+                                <span>Investigation</span>
+                                <input type="text" id="invest2" name="invest2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="med" unchecked="checked" />
+                                <span>Medicine</span>
+                                <input type="text" id="med2" name="med2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="nature" unchecked="checked" />
+                                <span>Nature</span>
+                                <input type="text" id="nature2" name="nature2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="percep" unchecked="checked" />
+                                <span>Perception</span>
+                                <input type="text" id="percep2" name="percep2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="perform" unchecked="checked" />
+                                <span>Performance</span>
+                                <input type="text" id="perform2" name="perform2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="pers" unchecked="checked" />
+                                <span>Persuasion</span>
+                                <input type="text" id="pers2" name="pers2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="rel" unchecked="checked" />
+                                <span>Religion</span>
+                                <input type="text" id="rel2" name="rel2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="sleight" unchecked="checked" />
+                                <span>Sleight of Hand</span>
+                                <input type="text" id="sleight2" name="sleight2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="stealth" unchecked="checked" />
+                                <span>Stealth</span>
+                                <input type="text" id="stealth2" name="stealth2">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" id="surv" unchecked="checked" />
+                                <span>Survival</span>
+                                <input type="text" id="surv2" name="surv2">
+                            </label>
+                        </p>
+
+                    </form>
+
+                </div>
+
+                <div class="col-2">
+                    <div class="lucky-container">
+                        <div class="lucky-card">
+                            <div class="row">
+                                <button class="luckyBtn" id="luckyBtn"> Lucky uses: </button>
+                                <form id="howmanyLucky">
+                                    <input type="text" class="lucky" id="lucky">
+                                </form>
+                                <button class="summonsbtn"> Summons used: </button>
+                                <form id="howmanySummons">
+                                    <input type="text" class="summon" id="summon">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spellslot-container">
+                        <div class="level1">
+                            <div class="row">
+                                <button class="lvl1btn" id="lvl1btn"> Level 1 uses: </button>
+                                <form id="howmanyL1">
+                                    <input type="text" class="lvl1" id="lvl1">
+                                </form>
+                                <button class="lvl2btn" id="lvl2btn"> Level 2 uses: </button>
+                                <form id="howmanyL2">
+                                    <input type="text" class="lvl2" id="lvl2">
+                                </form>
+                                <button class="lvl3btn" id="lvl3btn"> Level 3 uses: </button>
+                                <form id="howmanyL3">
+                                    <input type="text" class="lvl3" id="lvl3">
+                                </form>
+                                <button class="lvl4btn" id="lvl4btn"> Level 4 uses: </button>
+                                <form id="howmanyL4">
+                                    <input type="text" class="lvl4" id="lvl4">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notes-container">
+                        <form>
+                            <textarea id="subject" name="subject" spellcheck="false" placeholder="What happened today?"
+                                style="height:200px"></textarea>
+                        </form>
+                    </div>
+
+                    <div>
+                        <div id="addModel" class="modal black-text"></div>
+                        <a class='dropdown-button btn dropdownBtn spellbtn' href='#' data-activates='spellDrop'>spells<i
+                                class="material-icons right">arrow_drop_down</i></a>
+                        <ul id='spellDrop' class='dropdown-content'>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Save Button-->
+    <a class="waves-effect waves-light btn" id="save-button">Save Mue</a>
+
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+<!--attach an event listener to button and then the event listener will at html icon to page-->
+
+</html>
